@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nom de l’app — Landing</title>
+  <meta name="description" content="Une app iOS simple et efficace. Présentation, fonctionnalités et lien App Store.">
+  <meta property="og:title" content="Nom de l’app">
+  <meta property="og:description" content="Une app iOS simple et efficace.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/USER/REPO/main/assets/og-image.png">
+  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="" class="logo" />
+      <span class="brand-name">Nom de l’app</span>
+    </div>
+    <nav>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-outline" href="#download">Télécharger</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Faites <span class="accent">plus</span> avec votre iPhone</h1>
+        <p class="lead">Une app iOS élégante, rapide et privée. Conçue pour vous simplifier la vie au quotidien.</p>
+        <div class="cta" id="download">
+          <!-- Replace the link below with your actual App Store URL -->
+          <a class="appstore-badge" href="https://apps.apple.com/fr/app/nom-de-ton-app/idXXXXXXXXX">
+            <!-- Temporary CSS badge. Replace with the official Apple badge SVG from their marketing guidelines -->
+            <span class="apple-logo" aria-hidden="true"></span> Download on the App Store
+          </a>
+        </div>
+        <div class="subtext">Disponible sur iOS. Requiert iOS 16 ou supérieur.</div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/iphone-mock.svg" alt="Aperçu de l’app sur iPhone" class="mock">
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Simplicité, vitesse, confidentialité</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Rapide</h3>
+          <p>Démarre en un clin d’œil et reste fluide, même hors connexion.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h3>Privée</h3>
+          <p>Nous ne collectons pas vos données personnelles. Jamais.</p>
+        </div>
+        <div class="card">
+          <div class="icon">✨</div>
+          <h3>Élégante</h3>
+          <p>Interface épurée qui met l’essentiel en avant.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote container">
+      <blockquote>
+        “Une app qui va à l’essentiel, sans distraction.”
+      </blockquote>
+      <div class="cite">— Un utilisateur ravi</div>
+    </section>
+
+    <section id="faq" class="faq container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Combien coûte l’app ?</summary>
+        <p>Modèle gratuit avec options premium. Aucuns trackers.</p>
+      </details>
+      <details>
+        <summary>Où trouver le support ?</summary>
+        <p>Écrivez-nous à <a href="mailto:support@exemple.com">support@exemple.com</a>.</p>
+      </details>
+      <details>
+        <summary>Comment est gérée ma vie privée ?</summary>
+        <p>Consultez notre <a href="privacy.html">politique de confidentialité</a>.</p>
+      </details>
+    </section>
+
+    <section class="final-cta container">
+      <h2>Prêt·e à essayer ?</h2>
+      <a class="btn btn-primary" href="https://apps.apple.com/fr/app/nom-de-ton-app/idXXXXXXXXX">Télécharger sur l’App Store</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>© <span id="year"></span> Nom de l’app</div>
+    <div class="links">
+      <a href="privacy.html">Confidentialité</a>
+      <a href="#">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
